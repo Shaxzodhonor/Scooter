@@ -81,6 +81,13 @@
     left: 0;
     top: 29px;
 }
+.left-line img {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 240px;
+}
 
 
 
@@ -95,6 +102,13 @@
     .preference__item-title  {
         font-size: 48px;
         line-height: 48px;
+    }
+    .left-line img {
+        width: 500px;
+        height: 140px;
+        position: absolute;
+        right: 0;
+        top: 240px;
     }
     .right-line {
         width: 370px;

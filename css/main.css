@@ -1032,6 +1032,14 @@ img {
   top: 29px;
 }
 
+.left-line img {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: 240px;
+}
+
 @media only screen and (min-width: 660px) {
   .preference__item::before {
     background-size: 445px 445px;
@@ -1042,6 +1050,14 @@ img {
   .preference__item-title {
     font-size: 48px;
     line-height: 48px;
+  }
+
+  .left-line img {
+    width: 500px;
+    height: 140px;
+    position: absolute;
+    right: 0;
+    top: 240px;
   }
 
   .right-line {
