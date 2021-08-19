@@ -1,0 +1,107 @@
+//   SITE FOOTER ========
+#site-footer {
+    background-color:  #333A44;
+}
+.site-footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 90px;
+}
+.site-footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.site-footer__logo-link {
+    @include link-unstyled;
+    margin-bottom: 42px;
+}
+.site-footer__menu {
+    @include list-unstyled;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 85px;
+}
+.site-footer__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+.site-footer__item-link {
+    @include link-unstyled;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: $main-text;
+    transition: color 0.4s;
+}
+.site-footer__item-link:hover {
+    color: #FCB72B;
+}
+.site-footer__item-link:active {
+    color: #fa270b;
+}
+.socail-box__list {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+}
+.social-box__item:not(:first-child) {
+    margin-left: 24px;
+}
+.social-box__item-link {
+    @include link-unstyled;
+}
+.social-box__item:hover .social-box__item-svg {
+    fill: #E5ECF4;
+}
+
+
+// MEDIA SCREEN ==========
+
+@include breakpoint-up (500px) {
+    .site-footer__menu {
+        flex-direction: row;
+    }
+    .site-footer__item:not(:last-child) {
+        margin: 0px;
+        margin-right: 32px;
+    }
+    
+}
+@include breakpoint-up (570px) {
+    .site-footer__logo-link {
+        margin: 0;
+    }
+    .site-footer__menu {
+        margin-bottom: 0px;
+    }
+    .site-footer__left {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 85px;
+    }
+    .social-box__item:not(:first-child) {
+        margin-left: 40px;
+    }
+}
+@include breakpoint-up (660px) {
+    .site-footer__wrapper {
+        flex-direction: row;
+        padding-top: 34px;
+        padding-bottom: 33px;
+    }
+    .site-footer__left {
+        justify-content: flex-start;
+        margin: 0;
+    }
+    .site-footer__menu {
+        margin-left: 59px;
+    }
+    .social-box__item:not(:first-child) {
+        margin-left: 24px;
+    }
+}

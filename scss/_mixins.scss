@@ -1,0 +1,37 @@
+@mixin list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+@mixin link-unstyled {
+  display: inline-block;
+  text-decoration: none;
+}
+@mixin site-button {
+  background-color: #FCB72B;
+  padding: 14px 39px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: $white-text;
+  outline: none;
+  transition: color 0.5s;
+  border: 1px solid transparent;
+}
+
+@mixin site-button-hover {
+  background-color: #fff;
+  color: #FCB72B;
+  border: 1px solid #FCB72B;
+}
+@mixin site-button-active {
+  background-color: #fc322b;
+    color: #fff;
+}
+
+@mixin breakpoint-up ($screen-media) {
+  @media only screen and (min-width: $screen-media) {
+    @content
+  }
+}

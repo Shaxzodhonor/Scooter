@@ -1,0 +1,109 @@
+//  HERO =========
+#hero {
+    background-image: url(../images/hero-bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  right 0 center;
+    margin-top: 76px;
+}
+.hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 115px;
+    padding-bottom: 180px;
+
+    
+    background-image: url(../images/right-line.svg);
+    background-repeat: no-repeat;
+    background-size: 300px 90px;
+    background-position:  left -200px top 90%;   
+}
+.hero__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1.78571px;
+    color: $white-text;
+    max-width: 573px;
+    margin: 0;
+    margin-bottom: 24px;
+}
+.hero__text {
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: $white-text;
+    margin-bottom: 34px;
+    max-width: 573px;
+}
+.hero__button {
+    @include site-button;
+}
+.hero__button:hover {
+   @include site-button-hover;
+}
+.hero__button:active {
+    @include site-button-active;
+}
+
+
+
+//  MEDIA SCREEN =========  
+
+@include breakpoint-up (600px) {
+    .hero__wrapper {
+        padding-bottom: 217px;
+        background-image: url(../images/right-line.svg);
+        background-repeat: no-repeat;
+        background-size: 350px 120px;
+        background-position:  left 0 top 90%;   
+    }
+   
+    .hero__title {
+        font-size: 56px;
+        line-height: 56px;
+    }
+}
+@include breakpoint-up (900px) {
+    .hero__wrapper {
+        background-position:  right 15% top 69%;   
+        align-items: flex-start;
+        padding-top: 152px;
+    }
+    .hero__title {
+        text-align: left;
+    }
+    .hero__text {
+        text-align: left;
+        max-width: 405px;
+        margin-left: 105px;
+    }
+    .hero__button  {
+        margin-left: 105px;
+    }
+    
+}
+
+@include breakpoint-up (1120px) {
+ 
+    .hero__wrapper {
+        background-image: url(../images/right-line.svg);
+        background-repeat: no-repeat;
+        background-size: 350px 120px;
+        background-position:  right 20% top 60%;   
+    }
+    #hero {
+        background-image: url(../images/yellow-line.svg), url(../images/hero-bg-img.jpg);
+        background-repeat: no-repeat;
+        background-size: 2000px 13px, cover;
+        background-position: top 51% left calc(50% - 1450px),  right 0 center;
+        
+    }
+}
+
